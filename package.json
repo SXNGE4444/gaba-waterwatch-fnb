@@ -1,0 +1,25 @@
+{
+  "name": "gaba-waterwatch-fnb-preview",
+  "version": "0.6.0",
+  "private": true,
+  "description": "GABA WaterWatch competition v0.6, simulated municipal verification pipeline and water health guidance",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/review.js && node --check public/sw.js && node --test tests/*.test.cjs",
+    "android:init": "npx cap add android && npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:sync": "npx cap sync android",
+    "ios:init": "npx cap add ios && npx cap sync ios",
+    "ios:open": "npx cap open ios",
+    "ios:sync": "npx cap sync ios",
+    "native:configure-api": "node scripts/configure-native-api.mjs",
+    "check:cloud": "node scripts/day-one-cloud-acceptance.mjs"
+  },
+  "optionalDependencies": {
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/ios": "^8.0.0"
+  }
+}

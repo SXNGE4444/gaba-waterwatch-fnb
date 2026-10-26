@@ -1,0 +1,204 @@
+
+/* GABA BRAND SYSTEM v0.7 · reference-led design · 2026-10-23
+   Brand: deep forest / sage / warm ivory / quiet gold
+   Visual layers do not imply real measurements or municipal partnership. */
+:root {
+  --navy:#0e3328;--navy2:#123b2e;--navy3:#1c4737;
+  --ink:#173629;--muted:#718478;--accent:#b8d7bf;--teal:#2b7659;
+  --paper:#f7f5ee;--off:#eeeee5;--stroke:#e1e2d6;
+  --coral:#c76152;--white:#fffefa;--gold:#c6a355;
+  --shadow:0 12px 35px rgba(30,56,37,.065);
+}
+html {scroll-behavior:smooth}
+body {background:#f8f7f0;color:#1a3c2e}
+button,a { -webkit-tap-highlight-color:transparent }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {outline:3px solid #b8923f;outline-offset:3px}
+.brand-title,.site-wordmark,.site-serif,.site-hero h1,.site-section h2,.site-feature h3,.section-header h1,.panel-head h2,.inner-heading h1,.mobile-hero h1,.mobile-pagehead h2,.metric-value,.signal-body h3 {
+  font-family:Georgia,'Times New Roman',serif!important;letter-spacing:-.035em;
+}
+.brand-title {font-weight:500!important;letter-spacing:-.065em!important}
+.brand-dot{color:#c6a355}
+.brand-small{letter-spacing:2.8px!important}
+.site-shell {display:none;color:#173629;background:#f8f6ef;min-height:100vh}
+.mode-site {min-height:100vh}
+.mode-site .sidebar,.mode-site .desktop-space,.mode-site .community-shell,.mode-site .floating-view {display:none!important}
+.mode-site .site-shell {display:block}
+.mode-site.ops-locked .operator-lock {display:none}
+.site-header{position:sticky;top:0;z-index:200;background:rgba(250,249,244,.96);backdrop-filter:blur(12px);border-bottom:1px solid #dfe3d7;min-height:82px;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(22px,4vw,76px);gap:18px}
+.site-logo{display:flex;flex-direction:column;text-decoration:none;color:#103c2a!important;line-height:.88;min-width:160px}
+.site-wordmark{font-family:Georgia,serif;font-size:40px;letter-spacing:-.105em;font-weight:500}
+.site-submark{font-size:9px;font-weight:750;letter-spacing:.34em;margin-top:9px}
+.site-header nav{display:flex;gap:clamp(13px,2vw,31px);align-items:center}
+.site-header nav a{font-size:12px;color:#476456;text-decoration:none;font-weight:650}
+.site-header nav a:hover{color:#bc9143}
+.site-actions{display:flex;align-items:center;gap:9px}
+.site-btn{border:1px solid #154731;background:#154731;color:#fffdf6;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:14px 20px;min-height:43px;font-weight:750;font-size:12px;text-decoration:none;transition:transform .18s,background .18s}
+.site-btn:hover{background:#245b43;transform:translateY(-1px)}
+.site-btn.light{background:transparent;color:#123a2b}
+.site-btn.light:hover{background:#e9ede3}
+.site-btn.gold{background:#c2a055;color:#1a3128;border-color:#c2a055}
+.site-hero{position:relative;overflow:hidden;background:linear-gradient(110deg,#faf8f1 0%,#f8f8f0 52%,#e7eee5 100%);min-height:595px;display:grid;grid-template-columns:53% 47%;border-bottom:1px solid #dfe2d9}
+.site-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 41% 45%,rgba(255,255,255,.85),transparent 37%);pointer-events:none}
+.site-hero-copy{position:relative;z-index:2;align-self:center;padding:55px 4vw 63px clamp(28px,7.5vw,136px)}
+.site-kicker{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:3px;font-size:10px;font-weight:800;color:#7e8066}
+.site-kicker:before{content:"";width:27px;height:1px;background:#b99649}
+.site-hero h1{font-size:clamp(54px,5.9vw,101px);line-height:.98;font-weight:400;max-width:800px;margin:27px 0 24px;color:#163b2a}
+.site-hero h1 em{font-style:italic;color:#4d7759}
+.site-hero p{font-size:clamp(14px,1.15vw,17px);line-height:1.9;color:#5c7165;max-width:570px;margin:0 0 24px}
+.site-hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:25px}
+.site-smallprint{font-size:10px;color:#668070;letter-spacing:.4px}
+.site-hero-visual{position:relative;min-height:560px;overflow:hidden;background:#416b4b url('assets/gaba-waterfall.jpg') center/cover no-repeat}
+.site-hero-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#f8f8f0 0%,rgba(248,248,240,.25) 23%,transparent 60%),linear-gradient(0deg,rgba(9,36,26,.67),transparent 28%)}
+.site-hero-visual .image-caption{position:absolute;bottom:27px;right:36px;color:#f7f5e9;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;text-align:right;line-height:2.2}
+.site-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#f4f2e8;border-bottom:1px solid #dfddce;padding:20px max(22px,5vw)}
+.site-principles>div{display:flex;align-items:center;justify-content:center;gap:13px;padding:15px;min-height:70px;border-right:1px solid #dcd9c8}
+.site-principles>div:last-child{border:0}
+.site-principles .symbol{width:35px;height:35px;border:1px solid #59795f;border-radius:50%;display:grid;place-items:center;color:#2f644a;font-size:19px}
+.site-principles span:last-child{font-size:10px;font-weight:800;letter-spacing:1.45px;line-height:1.75;text-transform:uppercase}
+.site-section{padding:clamp(58px,7vw,110px) max(25px,6vw)}
+.site-intro{max-width:740px;margin-bottom:35px}
+.site-section h2{font-size:clamp(37px,4.2vw,67px);line-height:1.09;font-weight:400;margin:16px 0;color:#173b2b}
+.site-section p{font-size:15px;line-height:1.75;color:#61746a}
+.site-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.site-feature{background:#fffef9;border:1px solid #e0e2d7;border-radius:13px;overflow:hidden;box-shadow:var(--shadow)}
+.site-feature-visual{height:168px;display:flex;align-items:flex-end;padding:20px 22px;color:#f6f6eb;background:#23533e}
+.site-feature-visual.community{background:linear-gradient(0deg,rgba(8,39,29,.62),rgba(8,39,29,.08)),url('assets/gaba-waterfall.jpg') center 48%/cover}
+.site-feature-visual.operator{background:radial-gradient(circle at 70% 20%,#719878,#194a37 80%)}
+.site-feature-visual.evidence{background:radial-gradient(circle at 64% 9%,#aab99c,#3a6650 66%,#173a2d)}
+.site-feature-visual b{font-family:Georgia,serif;font-size:24px;font-weight:400}
+.site-feature-content{padding:23px 23px 26px}
+.site-feature h3{font-weight:400;font-size:26px;margin:0 0 11px}
+.site-feature p{font-size:13px;line-height:1.7;min-height:69px;margin:0 0 18px}
+.site-feature button{background:transparent;border:0;border-bottom:1px solid #c9a856;color:#1d5940;font-weight:800;font-size:12px;padding:0 0 7px}
+.site-split{background:#133d2e;color:#f9f6e9;display:grid;grid-template-columns:48% 52%;align-items:stretch}
+.site-split-photo{min-height:430px;background:linear-gradient(0deg,rgba(7,35,24,.32),transparent),url('assets/gaba-waterfall.jpg') center/cover}
+.site-split-copy{padding:clamp(50px,6vw,100px);display:flex;flex-direction:column;justify-content:center}
+.site-split h2{color:#fcf8ec}
+.site-split p{color:#d5e0d1}
+.site-split .site-kicker{color:#d0c7aa}
+.site-workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.site-workflow>div{padding:21px;border-left:2px solid #b99750;background:#fffef9}
+.site-workflow b{display:block;font-family:Georgia,serif;font-size:29px;color:#c3a158;font-weight:400}
+.site-workflow strong{display:block;margin:14px 0 8px;color:#173929}
+.site-workflow p{margin:0;font-size:12px}
+.site-demo-banner{background:#ebe9de;padding:15px 6vw;color:#5d6a57;font-size:11px;line-height:1.7;border-bottom:1px solid #dbdece;text-align:center}
+.site-footer{background:#0d3124;color:#e5eadf;padding:60px max(24px,6vw) 35px;display:flex;align-items:flex-end;justify-content:space-between;gap:35px}
+.site-footer p{color:#acc0b2;font-size:12px;line-height:1.7;max-width:500px}
+.site-footer a{color:#f5eed9}
+.site-footer .site-wordmark{font-size:50px;color:#f1eedf}
+
+/* Operator control centre: technical layout in the reference palette. */
+.sidebar{background:#0b2f22;color:#e9efdf;border-right:1px solid #28513a}
+.sidebar:before{content:"";position:absolute;bottom:0;left:0;right:0;height:235px;opacity:.23;pointer-events:none;background:linear-gradient(0deg,rgba(4,25,18,.7),transparent),url('assets/gaba-waterfall.jpg') center/cover}
+.sidebar>*{position:relative;z-index:1}
+.brand-logo .mark{border-color:#a7bca4}
+.mark svg{stroke:#bfca9d}
+.brand-title{color:#f9f6e9}
+.nav-btn{color:#c2d0c3}
+.nav-btn.active{background:#25583f!important;color:#fff8e8!important;border-left:3px solid #c6a355}
+.nav-btn.active .nav-icon{color:#e8d6a1}
+.count,.nav-hot{background:#c6a355!important;color:#173326!important}
+.nav-kicker{color:#95b098!important}
+.desktop-space{background:#f7f6ef}
+.topbar{background:#fdfcf6;border-bottom:1px solid #e6e3d5}
+.crumbs{color:#476a52}
+.top-right .env-label{color:#a67b36}
+.top-switch{border:1px solid #ced9cb;color:#24563d}
+.avatar{background:#e6ebdf;color:#16432e}
+.section-header{position:relative;overflow:hidden;background:linear-gradient(90deg,#f8f7ef 45%,rgba(248,247,239,.85) 67%,rgba(248,247,239,.12)),url('assets/gaba-waterfall.jpg') right center/auto 115% no-repeat;border:1px solid #e8e4d7;border-radius:15px;padding:38px 34px;margin-bottom:19px}
+.section-header h1{color:#123927}
+.section-header h1 em{color:#679278;font-weight:400}
+.section-header .lead{color:#526e5e;max-width:550px}
+.eyebrow,.panel-overline{color:#888b65}
+.eyebrow-bar{background:#c0a256}
+.btn-primary{background:#194e35!important;color:#fff8eb!important;border-color:#194e35!important}
+.btn-ghost{color:#245b42;border-color:#b7c7b5}
+.metric,.panel{background:#fffef9!important;border-color:#e1e3d8!important;box-shadow:0 6px 23px #304e3210}
+.metric-label,.metric-bottom{color:#748275}
+.metric-value{color:#193f2b;font-weight:400!important}
+.panel-head h2{font-weight:400;color:#1b4430}
+.panel-overline{letter-spacing:1.5px}
+.map-area{background:linear-gradient(130deg,#d8e5d6,#759e89 42%,#426d57)!important}
+.map-grid{opacity:.18}
+.map-graphic{opacity:.83}
+.map-graphic text{fill:#e7f6e7}
+.map-marker .marker-tag{background:#c2a158!important;color:#163325!important}
+.map-marker{box-shadow:0 12px 40px #20452d38}
+.incident-row{border-color:#e7e7db}
+.incident-row:hover{background:#f5f8f2}
+.text-link{color:#286b48}
+.signal-body h3{font-size:clamp(24px,2vw,36px);color:#233b2c;font-weight:400}
+.signal-overline{color:#947341}
+.workflow-panel .steps span{color:#b08c42}
+.operator-login-card{background:#173b2b;border-color:#719178}
+.operator-login-card h2{font-family:Georgia,serif;letter-spacing:-.03em;font-weight:400}
+.ops-login-button{background:#e3e6c6;color:#19482b}
+.operator-lock{background:#09271eea}
+.ops-resident-button{color:#e7e9d5}
+
+/* Resident experience · same app logic, new nature-forward visual identity */
+.mode-community{background:#ebece3}
+.community-shell{background:#f8f7f0;color:#183b2b}
+.mobile-top{background:#133b2b url('assets/gaba-waterfall.jpg') center 40%/cover;position:relative}
+.mobile-top:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#103526ec,#143a2cb8);pointer-events:none}
+.mobile-top>*{position:relative;z-index:1}
+.mobile-status{color:#fbf6e8}
+.mobile-brand{border-bottom:1px solid #ffffff29}
+.mobile-logo .brand-title{font-size:32px!important;color:#fff8e9}
+.mobile-logo .brand-small{font-size:7px!important;letter-spacing:2px!important}
+.mobile-avatar{background:#cfbb86;color:#24412b;border-color:#e8dbab}
+.mobile-hero{background:linear-gradient(105deg,#184632 6%,#16442fea 68%,#194b3280),url('assets/gaba-waterfall.jpg') center 30%/cover;min-height:235px!important}
+.mobile-hero h1{font-weight:400;color:#faf6e7;font-size:38px}
+.mobile-hero h1 em{color:#e2dba9}
+.mobile-hero p{color:#e1e9d9}
+.mobile-hero-art{display:none}
+.mobile-kicker{color:#e7d195;letter-spacing:2px}
+.mobile-kicker.dark{color:#9c7c42}
+.community-scroll{background:#f8f7f0}
+.area-choice,.tip-card,.status-card,.quick-actions button,.water-safety-cta,.about-list>div{background:#fffef9;border-color:#e4e5d8!important;box-shadow:0 7px 24px #25472b0d}
+.area-choice select{color:#214833}
+.source-note{background:#f2efe3;border-left-color:#b8954b;color:#68745f}
+.status-icon.green-status,.calc-result{background:#e7f0e6;color:#276044}
+.status-badge{color:#98844f}
+.prepared-card{background:#e6eee0;border-color:#d7e4d6;color:#234d36}
+.tip-index{color:#97773d}
+.tip-card h3,.mobile-pagehead h2{color:#183a2c;font-family:Georgia,serif!important;font-weight:400!important}
+.mobile-pagehead h2{font-size:40px}
+.mobile-primary,.quick-actions .report-tab{background:#164c34!important;color:#fffdf1!important}
+.mobile-nav{background:#fffef9;border-color:#e3e5d9}
+.mobile-nav button.active{color:#145c3e}
+.mobile-nav .plus-circle{background:#174a34;color:#fff9ec}
+.mobile-outline{color:#226348;border-color:#8db49b}
+.callout-community{background:#e4ece1;color:#2b4b39}
+.health-warning{background:#fff1ec;border-color:#e7c6b9}
+@media(max-width:1040px){
+  .site-hero{grid-template-columns:57% 43%}
+  .site-header nav{display:none}
+  .site-hero-copy{padding-left:6vw}
+  .site-principles{padding:14px}
+}
+@media(max-width:750px){
+  .site-header{min-height:70px;padding:12px 17px}
+  .site-logo{min-width:110px}
+  .site-wordmark{font-size:33px}
+  .site-submark{font-size:7px}
+  .site-actions .light{display:none}
+  .site-btn{padding:12px 13px;font-size:11px}
+  .site-hero{display:flex;flex-direction:column;min-height:0}
+  .site-hero-copy{padding:49px 24px 36px}
+  .site-hero h1{font-size:clamp(52px,11vw,76px);margin:18px 0}
+  .site-hero p{font-size:14px}
+  .site-hero-visual{min-height:285px;background-position:center 43%}
+  .site-hero-visual:before{background:linear-gradient(0deg,#0e322599,transparent 38%)}
+  .site-principles{grid-template-columns:repeat(2,1fr);padding:8px}
+  .site-principles>div:nth-child(2){border-right:0}
+  .site-principles>div{justify-content:flex-start;padding:12px 15px}
+  .site-cards,.site-workflow{grid-template-columns:1fr}
+  .site-feature p{min-height:0}
+  .site-split{grid-template-columns:1fr}
+  .site-split-photo{min-height:260px}
+  .site-split-copy{padding:42px 27px}
+  .site-footer{flex-direction:column;align-items:flex-start}
+  .section-header{padding:26px 18px;background-position:right center;background-size:auto 100%}
+}
+@media(prefers-reduced-motion:reduce){.site-btn{transition:none}html{scroll-behavior:auto}}
