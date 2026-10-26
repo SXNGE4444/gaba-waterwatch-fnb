@@ -1,0 +1,14 @@
+{
+  "revision": 1,
+  "incidents": [
+    {"id":"INC-1042","zone":"Khayelitsha East","asset":"DMA-07 / Spine pipeline","type":"Probable underground leak","severity":"Critical","status":"Investigating","source":"Sensor correlation","time":"09:41","litres":2340000,"confidence":94,"evidence":["Night flow increased to 49.8 L/s","Downstream pressure fell to 308 kPa","Reservoir drawdown accelerated"],"audit":["09:41 · Simulated anomaly detected","09:43 · Evidence brief generated"],"createdAt":"2026-10-22T09:41:00+02:00"},
+    {"id":"INC-1041","zone":"Mitchells Plain","asset":"Reservoir / R-02","type":"Low reservoir level","severity":"High","status":"Open","source":"Reservoir telemetry","time":"08:25","litres":0,"confidence":88,"evidence":["Reservoir level 38%","24-hour average 61%","No flow confirmation available"],"audit":["08:25 · Reservoir warning raised"],"createdAt":"2026-10-22T08:25:00+02:00"},
+    {"id":"INC-1040","zone":"Bellville South","asset":"Pump station / PS-03","type":"Pump vibration anomaly","severity":"Medium","status":"Monitoring","source":"Sensor simulator","time":"07:58","litres":0,"confidence":81,"evidence":["Vibration index outside normal band","Run-time above simulated threshold"],"audit":["07:58 · Simulated alert opened"],"createdAt":"2026-10-22T07:58:00+02:00"}
+  ],
+  "reports": [
+    {"id":"REP-3021","category":"No water","zone":"Khayelitsha East","details":"No running water since early morning near the library.","createdAt":"2026-10-22T08:07:00+02:00","status":"Received","source":"Seeded demonstration","clientId":"seed-3021"}
+  ],
+  "audit": [
+    {"id":"AUD-1","action":"Simulation seeded","detail":"All data is fictional and must not be used for operations","time":"2026-10-22T08:00:00+02:00"}
+  ]
+}

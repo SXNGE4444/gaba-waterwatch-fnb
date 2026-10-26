@@ -1,0 +1,15 @@
+{
+  "appId": "za.co.lastdices.gabawaterwatch",
+  "appName": "GABA WaterWatch",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "automatic"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "http"
+  }
+}
