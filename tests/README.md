@@ -1,0 +1,1 @@
+Tests cover the synthetic REST API including a community report, duplicate submission protection, report status updates, incident transition validation, app prefix routing, and health check. They do not constitute penetration testing or production security validation.
